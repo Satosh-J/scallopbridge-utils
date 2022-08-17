@@ -9,8 +9,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ChainSafe/chainbridge-utils/keystore"
-	"github.com/ChainSafe/chainbridge-utils/msg"
+	"github.com/Satosh-J/scallopbridge-utils/keystore"
+	"github.com/Satosh-J/scallopbridge-utils/msg"
 )
 
 func TestSaveAndLoad(t *testing.T) {

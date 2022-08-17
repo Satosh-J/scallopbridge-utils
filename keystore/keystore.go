@@ -29,7 +29,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ChainSafe/chainbridge-utils/crypto"
+	"github.com/Satosh-J/scallopbridge-utils/crypto"
 )
 
 const EnvPassword = "KEYSTORE_PASSWORD"

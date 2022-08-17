@@ -11,8 +11,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/ChainSafe/chainbridge-utils/core"
-	"github.com/ChainSafe/chainbridge-utils/msg"
+	"github.com/Satosh-J/scallopbridge-utils/core"
+	"github.com/Satosh-J/scallopbridge-utils/msg"
 	log "github.com/ChainSafe/log15"
 )
 

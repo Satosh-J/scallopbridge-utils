@@ -6,9 +6,9 @@ package keystore
 import (
 	"fmt"
 
-	"github.com/ChainSafe/chainbridge-utils/crypto"
-	"github.com/ChainSafe/chainbridge-utils/crypto/secp256k1"
-	"github.com/ChainSafe/chainbridge-utils/crypto/sr25519"
+	"github.com/Satosh-J/scallopbridge-utils/crypto"
+	"github.com/Satosh-J/scallopbridge-utils/crypto/secp256k1"
+	"github.com/Satosh-J/scallopbridge-utils/crypto/sr25519"
 	"github.com/centrifuge/go-substrate-rpc-client/signature"
 )
 
