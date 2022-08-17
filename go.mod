@@ -1,4 +1,4 @@
-module github.com/ChainSafe/chainbridge-utils
+module github.com/Satosh-J/scallopbridge-utils
 
 go 1.13
 
