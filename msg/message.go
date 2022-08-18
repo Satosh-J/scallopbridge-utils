@@ -6,6 +6,7 @@ package msg
 import (
 	"fmt"
 	"math/big"
+	"github.com/ethereum/go-ethereum/common"
 )
 
 type ChainId uint8
@@ -36,7 +37,7 @@ type Message struct {
 	Payload      []interface{} // data associated with event sequence
 }
 
-func NewFungibleTransfer(source, dest ChainId, nonce Nonce, amount *big.Int, resourceId ResourceId, recipient []byte) Message {
+func NewFungibleTransfer(source, dest ChainId, nonce Nonce, tokenAddress common.Address, amount *big.Int, resourceId ResourceId, recipient []byte) Message {
 	return Message{
 		Source:       source,
 		Destination:  dest,
@@ -44,6 +45,7 @@ func NewFungibleTransfer(source, dest ChainId, nonce Nonce, amount *big.Int, res
 		DepositNonce: nonce,
 		ResourceId:   resourceId,
 		Payload: []interface{}{
+			tokenAddress.Bytes(),
 			amount.Bytes(),
 			recipient,
 		},
