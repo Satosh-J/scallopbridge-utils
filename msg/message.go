@@ -45,9 +45,9 @@ func NewFungibleTransfer(source, dest ChainId, nonce Nonce, tokenAddress common.
 		DepositNonce: nonce,
 		ResourceId:   resourceId,
 		Payload: []interface{}{
-			tokenAddress.Bytes(),
 			amount.Bytes(),
 			recipient,
+			tokenAddress.Bytes(),
 		},
 	}
 }
